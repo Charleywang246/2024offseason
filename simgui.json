@@ -1,0 +1,22 @@
+{
+  "NTProvider": {
+    "types": {
+      "/FMSInfo": "FMSInfo",
+      "/SmartDashboard/Field": "Field2d",
+      "/SmartDashboard/Go To X1": "Command",
+      "/SmartDashboard/Go To X2": "Command",
+      "/SmartDashboard/Go To X3": "Command",
+      "/SmartDashboard/MB-X2 pathfind": "Command",
+      "/SmartDashboard/SHOOT": "Command",
+      "/SmartDashboard/SHOOT mid-x2_stage_base pathfind+EventMarker": "Command",
+      "/SmartDashboard/VisionSystemSim-main/Sim Field": "Field2d",
+      "/SmartDashboard/auto chooser": "String Chooser"
+    }
+  },
+  "NetworkTables Info": {
+    "Server": {
+      "open": true
+    },
+    "visible": true
+  }
+}

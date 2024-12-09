@@ -13,6 +13,7 @@ import com.revrobotics.CANSparkLowLevel.MotorType;
 
 import edu.wpi.first.math.controller.SimpleMotorFeedforward;
 import edu.wpi.first.math.geometry.Rotation2d;
+import edu.wpi.first.math.geometry.Translation2d;
 import edu.wpi.first.math.kinematics.SwerveModulePosition;
 import edu.wpi.first.math.kinematics.SwerveModuleState;
 import edu.wpi.first.wpilibj2.command.SubsystemBase;
@@ -24,6 +25,7 @@ import frc.FSLib.swerve.OnboardModuleState;
 import frc.FSLib.swerve.SwerveModuleConstants;
 import frc.robot.Constants;
 import frc.robot.Constants.RobotConstants;
+import frc.robot.Constants.SwerveConstants;
 
 public class SwerveModule extends SubsystemBase {
 
@@ -43,7 +45,10 @@ public class SwerveModule extends SubsystemBase {
 
   private final SimpleMotorFeedforward FeedForward = new SimpleMotorFeedforward(Constants.SwerveConstants.driveKS, Constants.SwerveConstants.driveKV, Constants.SwerveConstants.driveKA);
 
+  private SwerveModuleConstants swerveModuleConstants;
+
   public SwerveModule(int moduleNumber, SwerveModuleConstants moduleConstants) {
+    this.swerveModuleConstants = moduleConstants;
     this.moduleNumber = moduleNumber;
     angleOffset = moduleConstants.angleOffset;
 
@@ -135,5 +140,9 @@ public class SwerveModule extends SubsystemBase {
 
   public void setDriveMotor(double speed) {
     driveMotor.set(speed);
+  }
+
+  public SwerveModuleConstants getSwerveModuleConstants() {
+    return swerveModuleConstants;
   }
 }

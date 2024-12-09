@@ -1,0 +1,49 @@
+{
+  "version": 1.0,
+  "startingPose": null,
+  "command": {
+    "type": "sequential",
+    "data": {
+      "commands": [
+        {
+          "type": "path",
+          "data": {
+            "pathName": "MB-X1"
+          }
+        },
+        {
+          "type": "path",
+          "data": {
+            "pathName": "X1-MB"
+          }
+        },
+        {
+          "type": "path",
+          "data": {
+            "pathName": "MB-X2"
+          }
+        },
+        {
+          "type": "path",
+          "data": {
+            "pathName": "X2-MB"
+          }
+        },
+        {
+          "type": "path",
+          "data": {
+            "pathName": "MB-X3"
+          }
+        },
+        {
+          "type": "path",
+          "data": {
+            "pathName": "X3-MB"
+          }
+        }
+      ]
+    }
+  },
+  "folder": null,
+  "choreoAuto": false
+}
